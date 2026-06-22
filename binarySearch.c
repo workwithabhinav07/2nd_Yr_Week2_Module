@@ -3,7 +3,7 @@ particular product exists in inventory.*/
 #include <stdio.h>
 #include <stdlib.h>
 
- void bubbleSort(int *product_id ,int  N,int target_id ){
+ void binarySearch(int *product_id ,int  N,int target_id ){
      int mid,start =0, end =N-1;
 
       while(start <= end ){
@@ -41,7 +41,7 @@ int main(){
     }
     printf("Enter target product id: ");
     scanf("%d",&target_id); 
-    bubbleSort(product_id ,  N , target_id);
+    binarySearch(product_id ,  N , target_id);
 
 free(product_id);
 return 0;
